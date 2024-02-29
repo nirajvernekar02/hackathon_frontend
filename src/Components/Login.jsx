@@ -59,7 +59,7 @@ export default function SignIn() {
           console.log('Response:', response.data);
           toast.success("Login succesfull")
           localStorage.setItem('userData', JSON.stringify(response.data));
-          navigate('/')
+          navigate('/home')
           // Proceed with login
         } else {
           toast.warn("Please complete the reCAPTCHA verification.");
@@ -80,13 +80,16 @@ export default function SignIn() {
       <Container component="main" maxWidth="xs" sx={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px" }}>
         <CssBaseline />
         <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
+  sx={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center', 
+    marginTop:'30px',
+    paddingS:'30px'// Center vertically
+    // height: '100vh', // Full viewport height
+  }}
+>
           <Grid container justifyContent="center" alignItems="center">
             <Avatar alt="Logo" src={Logoo} sx={{ width: 200, height: 200 }} />
           </Grid>

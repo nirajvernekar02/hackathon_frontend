@@ -19,8 +19,12 @@ import { Link } from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = [
     { label: "Home", path: "/" },
-    { label: "About", path: "/aboutus" },
-    { label: "Contact", path: "/contact" },
+    { label: "Category", path: "/category" },
+    { label: "Debt", path: "/debt" },
+    { label: "Budget", path: "/budget" },
+    { label: "Expence", path: "/expencetable" },
+    { label: "Income", path: "/incometable" },
+    { label: "REcurring", path: "/recurring" },
     { label: "Login", path: "/signin" },
     { label: "Sign Up", path: "/signup" },
     
